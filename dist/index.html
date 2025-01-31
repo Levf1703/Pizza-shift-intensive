@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <meta charset="UTF-8" />
+  <title>Pizza-shift</title>
+</head>
+
+<body class="body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="index.html" class="page-header__logo">
+        <svg class="page-header_logo-icon" width="77" height="35">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="page-header__nav">
+        <a href="#" class="page-header__nav-pic">
+          <svg class="page-header__pic-icon" width="24" height="25">
+            <use xlink:href="assets/icons/symbols.svg#User"></use>
+          </svg>
+        </a>
+        <a href="#" class="page-header__nav-link">Профиль</a>
+        <a href="#" class="page-header__nav-pic">
+          <svg class="page-header__pic-icon" width="24" height="25">
+            <use xlink:href="assets/icons/symbols.svg#Time"></use>
+          </svg>
+        </a>
+        <a href="#" class="page-header__nav-link">Заказы</a>
+        <a href="#" class="page-header__nav-pic3">
+          <svg class="page-header__pic-icon" width="24" height="25">
+            <use xlink:href="assets/icons/symbols.svg#basket"></use>
+          </svg>
+        </a>
+        <a href="#" class="page-header__nav-link">Корзина</a>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="listing">
+      <div class="listing__pizza-list">
+        <!-- prettier-ignore -->
+        <article class="pizza-card listing__pizza-card">
+          <a href="#" class="pizza-card__link">
+            <picture class="pizza-card__picture">
+              <img src="assets/images/Pepperoni.jpg" alt="пепперони" class="pizza-card__img" />
+            </picture>
+            <h4 class="pizza-card__title">Пепперони</h4>
+            <p class="pizza__description">Пикантная пепперони, увеличенная порция моцареллы, фирменный томатный соус</p>
+            <h4 class="pizza__price">от 299 ₽</h4>
+            <button type="button" class="pizza__btn" id="js-pizzaOpenBtn">Выбрать</button>
+          </a>
+        </article>
+        <article class="pizza-card listing__pizza-card">
+          <a href="#" class="pizza-card__link">
+            <picture class="pizza-card__picture">
+              <img src="assets/images/Cheese.jpg" alt="сырная" class="pizza-card__img" />
+            </picture>
+            <h4 class="pizza-card__title">Сырная</h4>
+            <p class="pizza__description">Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо</p>
+            <h4 class="pizza__price">от 289 ₽</h4>
+            <button type="button" class="pizza__btn" id="js-pizzaOpenBtn">Выбрать</button>
+          </a>
+        </article>
+        <article class="pizza-card listing__pizza-card">
+          <a href="#" class="pizza-card__link">
+            <picture class="pizza-card__picture">
+              <img src="assets/images/Double_chicken.jpg" alt="цыплёнок" class="pizza-card__img" />
+            </picture>
+            <h4 class="pizza-card__title">Двойной цыпленок</h4>
+            <p class="pizza__description">Цыпленок , моцарелла, фирменный соус альфредо</p>
+            <h4 class="pizza__price">от 389 ₽</h4>
+            <button type="button" class="pizza__btn" id="js-pizzaOpenBtn">Выбрать</button>
+          </a>
+        </article>
+        <article class="pizza-card listing__pizza-card">
+          <a href="#" class="pizza-card__link">
+            <picture class="pizza-card__picture">
+              <img src="assets/images/Pepperoni.jpg" alt="пепперони" class="pizza-card__img" />
+            </picture>
+            <h4 class="pizza-card__title">Пепперони</h4>
+            <p class="pizza__description">Пикантная пепперони, увеличенная порция моцареллы, фирменный томатный соус</p>
+            <h4 class="pizza__price">от 299 ₽</h4>
+            <button type="button" class="pizza__btn" id="js-pizzaOpenBtn">Выбрать</button>
+          </a>
+        </article>
+        <article class="pizza-card listing__pizza-card">
+          <a href="#" class="pizza-card__link">
+            <picture class="pizza-card__picture">
+              <img src="assets/images/Cheese.jpg" alt="сырная" class="pizza-card__img" />
+            </picture>
+            <h4 class="pizza-card__title">Сырная</h4>
+            <p class="pizza__description">Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо</p>
+            <h4 class="pizza__price">от 289 ₽</h4>
+            <button type="button" class="pizza__btn" id="js-pizzaOpenBtn">Выбрать</button>
+          </a>
+        </article>
+        <article class="pizza-card listing__pizza-card">
+          <a href="#" class="pizza-card__link">
+            <picture class="pizza-card__picture">
+              <img src="assets/images/Double_chicken.jpg" alt="цыплёнок" class="pizza-card__img" />
+            </picture>
+            <h4 class="pizza-card__title">Двойной цыпленок</h4>
+            <p class="pizza__description">Цыпленок , моцарелла, фирменный соус альфредо</p>
+            <h4 class="pizza__price">от 389 ₽</h4>
+            <button type="button" class="pizza__btn" id="js-pizzaOpenBtn">Выбрать</button>
+          </a>
+        </article>
+      </div>
+    </div>
+  </main>
+  <div class="modal-window">
+    <div class="modal-window__wrapper">
+      <div class="modal-window__container">
+        <div class="modal-window__left">
+          <picture class="modal-window__picture">
+            <img src="assets/images/Pepperoni.jpg" alt="пепперони" class="modal-window__img" />
+          </picture>
+        </div>
+        <div class="modal-window__right">
+          <h4 class="modal-window__title">Пепперони</h4>
+          <p class="modal-window__size">30 см, традиционное тесто</p>
+          <p class="modal-window__description">Пикантная пепперони, увеличенная порция моцареллы, фирменный томатный соус</p>
+          <div class="modal-window__btns">
+            <form>
+              <select name="size">
+                <option value="">Выберите размер пиццы</option>
+                <option value="small">Маленькая</option>
+                <option value="medium">Средняя</option>
+                <option value="large">Большая</option>
+              </select>
+            </form>
+          </div>
+          <h4 class="modal-window__title">Добавить по вкусу</h4>
+          <div class="modal-window__supplements">
+            <div class="modal-window__card">
+              <picture class="modal-window__picture-small">
+                <img src="assets/images/Cheese_bort.png" alt="" class="modal-window__img" />
+              </picture>
+              <p class="pizza__description">Сырный бортик</p>
+              <h4 class="pizza__price">179 ₽</h4>
+            </div>
+            <div class="modal-window__card">
+              <picture class="modal-window__picture-small">
+                <img src="assets/images/Shrimps.jpg" alt="" class="modal-window__img" />
+              </picture>
+              <p class="pizza__description">Креветки</p>
+              <h4 class="pizza__price">199 ₽</h4>
+            </div>
+            <div class="modal-window__card">
+              <picture class="modal-window__picture-small">
+                <img src="assets/images/Mozzarella.jpg" alt="" class="modal-window__img" />
+              </picture>
+              <p class="pizza__description">Сливочная моцарелла</p>
+              <h4 class="pizza__price">79 ₽</h4>
+            </div>
+            <div class="modal-window__card">
+              <picture class="modal-window__picture-small">
+                <img src="assets/images/Peppers.jpg" alt="" class="modal-window__img" />
+              </picture>
+              <p class="pizza__description">Халапеньо</p>
+              <h4 class="pizza__price">52 ₽</h4>
+            </div>
+          </div>
+          <button type="button" class="pizza__btn">Добавить в корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
