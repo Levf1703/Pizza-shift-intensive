@@ -10,6 +10,9 @@
     overflow-y: auto;
     z-index: 110;
     display: none;
+    @media @bw360 {
+      padding: 0;
+    }
     
     &__wrapper {
       box-sizing: border-box;
@@ -20,6 +23,9 @@
       max-width: 850px;
       margin: auto;
       background-color: rgba(255, 255, 255, 1);
+      @media @bw360 {
+      max-width: 360px;
+      }
     }
     
     &__container {
@@ -30,6 +36,11 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 0 40px 40px;
+      @media @bw360 {
+      flex-direction: column;
+      max-width: 360px;
+      padding: 0;
+      }
     }
 
     &__title {
@@ -38,6 +49,9 @@
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
+        @media @bw360 {
+            max-width: 360px;
+        } 
     }
 
     &__size,
@@ -48,12 +62,18 @@
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
+        @media @bw360 {
+            max-width: 320px;
+        }
     }
 
     &__left {
         margin-top: 30px;
         height: 180px;
         width: 180px;
+        @media @bw360 {
+            margin-left: 100px;
+        }
     }
     &__right {
         display: flex;
@@ -111,5 +131,8 @@
         text-align: center;
         box-shadow: 0 3px 5px gray;
         cursor: pointer;
+        @media @bw360 {
+            width: calc(33.3333%);
+        }
     }
 }

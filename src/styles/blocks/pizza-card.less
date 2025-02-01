@@ -2,6 +2,9 @@
     display: flex;
     width: 299px;
     height: 484px;
+    @media @bw360 {
+        height: 400px;
+    }
     
     &__link {
     display: flex;
@@ -26,6 +29,9 @@
         display: block;
         width: 100%;
         padding-top: 244px;
+        @media @bw360 {
+            padding-top: 155px;
+        }
     }
 
     &__img {
@@ -36,6 +42,11 @@
         width: 220px;
         height: 220px;
         object-fit: cover;
+        @media @bw360 {
+            left: 75px;
+            width: 150px;
+            height: 150px;
+        }
     }
 
     &__title,

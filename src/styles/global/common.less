@@ -11,10 +11,20 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding-top: 87px;
+    @media @bw360 {
+      padding-top: 0;
+    }
 }
 
 .main {
     flex: 1 0 auto;
+    &__title {
+      display: none;
+      @media @bw360 {
+        display: inline;
+        margin: 0 0 15px 70px;
+      }
+    }
 }
 
 .pizza {
@@ -25,6 +35,9 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    @media @bw360 {
+      margin-bottom: 0;
+    }
   }
 
   &__price {
@@ -52,6 +65,9 @@ body {
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
     overflow: hidden;
     cursor: pointer;
+    @media @bw360 {
+      width: 300px;
+    }
     &:hover{
         @media (hover: hover) {
             background-color: black;
